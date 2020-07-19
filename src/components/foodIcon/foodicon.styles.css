@@ -1,0 +1,28 @@
+.foodicon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+.foodicon img{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 35%;
+}
+.foodicon:hover{
+    cursor: pointer;
+}
+.foodicon:focus{
+    border-radius: 35%;
+    background-color: rgb(204, 95, 32);
+    border: none;
+    outline: none;
+}
+.foodicon p{
+    margin: 0;
+}

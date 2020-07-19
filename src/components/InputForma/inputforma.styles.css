@@ -1,0 +1,14 @@
+.inputforma{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid gray;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+}
+.inputforma:focus{
+    outline: none;
+}
+.inputforma::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

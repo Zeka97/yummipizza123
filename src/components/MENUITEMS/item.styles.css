@@ -1,0 +1,33 @@
+.item{
+    width: 100%;
+    border: 0.01px solid rgb(230, 228, 228);
+    border-radius: 10%;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 20px;
+    
+}
+.item .name{
+    color:rgb(209, 92, 14);
+    margin-left: 7%;
+}
+
+.item img{
+    height: 120px;
+    width: 100%;
+
+}
+.itemdescription{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.itemdescription span{
+    margin-right: 30%;
+    font-weight: bold;
+}
+.itemdescription button{
+    width: 20%;
+    color: white;
+    border-radius: 5px;
+    height: 20px;
+}

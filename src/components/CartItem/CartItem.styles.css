@@ -1,0 +1,45 @@
+.cartitem{
+display: grid;
+grid-template-columns: 1fr 2fr 0.1fr 0.1fr 0.1fr 1fr 1fr;
+margin-bottom: 1vh;
+}
+.cartitem img{
+    height: 70px;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+}
+.cartitemname{
+    margin-left: 10px;
+    margin-right: 16px;
+    font-size: 14px;
+    justify-self: center;
+    align-self: center;
+}
+.cartitem .price{
+    margin-left: 65px;
+    justify-self: center;
+    align-self: center;
+}
+.cartitem span{
+    margin-right: 5px;
+    margin-left: 5px;
+    justify-self: center;
+align-self: center;
+}
+.cartitem .remove{
+    margin-left: 50px;
+    justify-self: center;
+align-self: center;
+}
+.cartitem .remove:hover{
+    cursor: pointer;
+}
+.cartitem span{
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+.cartitem span:hover{
+    cursor: pointer;
+}

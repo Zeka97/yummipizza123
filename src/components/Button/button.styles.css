@@ -1,0 +1,13 @@
+.clearall{
+    width: 100%;
+    background-color: rgb(209, 92, 14);
+    border: none;
+    height: 10%;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+}
+.clearall:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

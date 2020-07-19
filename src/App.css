@@ -1,0 +1,184 @@
+.App{
+    height: 100vh;
+    width: 100%;
+  }
+  .header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .App .logo{
+    margin-left: 15%;
+  }
+  
+  .mainpagedisplay{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+  }
+  .menudisplay{
+    width: 60%;
+    margin-left: 15%;
+  }
+  
+  .mainpagedisplay .menudisplay .mainpicture {
+    background-image: url('./icons/displaypicture.png');
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+  }
+  .mainpagedisplay .menudisplay .mainpicture h3{
+    color: white;
+    margin-left: 15%;
+  }
+  .titleandsearchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+  }
+  .titleandsearchbar h3{
+    margin:0;
+  }
+  .titleandsearchbar input{
+    height: 20px; 
+    border: 0.4px solid;
+    width: 40%;
+    border-radius: 4%;
+    color:rgb(228, 91, 228);
+    border-color: rgb(228, 91, 228);
+  }
+  .titleandsearchbar input::placeholder{
+    color:rgb(228, 91, 228);
+  }
+  .titleandsearchbar input:focus{
+    outline: none;
+  }
+  .foodiconsmenu{
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+  }
+  .menuitems{
+    margin-top:3%;
+    height: 52vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-gap: 15px;
+  }
+  
+  /*-------------------------ORDER DISPLAY--------------------*/
+  
+  .cartdisplay{
+    margin-left:5%;
+    margin-right:2%;
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+  }
+  
+  .cartdisplay .ordertitleandicon
+  {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .ordertitleandicon .cartimage{
+    background-image: url('./icons/carticon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cartimage span{
+    color:black;
+    font-weight: bold;
+  }
+
+  .cartdisplay .removeallitems{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width: 100%;
+    background-color: rgb(209, 92, 14);
+    border: none;
+    height: 10%;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 3%;
+  }
+  .cartdisplay .removeallitems:hover{
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .cartdisplay .removeallitems div span{
+      margin-left: 5%;
+      font-size: 13px;
+      font-weight: bold;
+    }
+  .approxtime{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    align-items: center;
+  }
+  .approxtime div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .cartitems{
+    height: 45vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .cartitemsheader{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cartitemsheader .quantity{
+    margin-right: 17%
+  }
+  .cartitemsheader .price{
+    margin-right: 15%;
+  }
+  .Totalpriceandfinishorder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .Totalpriceandfinishorder button{
+    margin-left: 50%;
+    height: 40px;
+    color: white;
+  }
+  .proceedmessage{
+    color: red;
+    font-family: monospace;
+  }
+  .deliverypricemessage{
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: initial;
+  }

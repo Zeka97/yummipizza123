@@ -1,0 +1,8 @@
+.paymentitem{
+    height: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-bottom: 1px solid gray;
+    width: 70%;
+    margin-left: 15%;
+}
