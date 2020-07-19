@@ -1,9 +1,12 @@
+@media only screen and (min-width: 930px) {
+
 .orderpage{
     height: 100vh;
     width: 100%;
     display: flex;
 }
 .backgroundpicture{
+    display: flex;
     width: 50%;
     height: 100%;
     background-image: url('./Supreme_pizza.jpg');
@@ -79,3 +82,92 @@
     width: 20%;
     height: 40px;
 }
+}
+@media only screen and (max-width: 930px) {
+
+    .orderpage{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+    .backgroundpicture{
+        display: none;
+        width: 50%;
+        height: 100%;
+        background-image: url('./Supreme_pizza.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .orderforma{
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+        
+    }
+    .orderlogo{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .returntopage{
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-bottom: 4%;
+    }
+    .returntopage:hover{
+        cursor: pointer;
+        opacity: 0.4;
+    }
+    .orderforma h3{
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+    }
+    .paymentform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .orderforma .descriptiongrid{
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .orderforma .deliveryprice{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        border-bottom: 1px solid gray;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .orderforma .deliveryprice h3{
+        margin-top: 2%;
+        margin-bottom:1%;
+        justify-self: start;
+        
+    }
+    .orderforma .deliveryprice span{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        align-self: center;
+        font-weight: bold;
+    }
+    
+    .totalpriceandpaybutton{
+        margin-top: 2%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15%;
+        align-items: center;
+    }
+    .totalpriceandpaybutton button{
+        width: 20%;
+        height: 40px;
+    }
+    }

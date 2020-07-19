@@ -23,7 +23,9 @@ import OrderPage from './pages/OrderPage/orderpage.component';
 
 const App = () => {
 
-  console.log(FOOD_MENU);
+  const[openshoppingcart,setOpenshoppingcart] = useState({
+    hidden:false
+  })
 
   const[searchfield,setSearchfield] = useState({
     input:'',
@@ -199,15 +201,28 @@ const goToOrderPage = () => {
 }
 
 
+/*--------------------PRIKAZI KORPU------------------*/
+
+const PrikaziKorpu = () => {
+  setOpenshoppingcart({
+    hidden: !openshoppingcart.hidden
+  });
+};
+
+
 if(searchfield.order == false)
 {
   return (
     <div className="App">
         <div className="header">
         <img className="logo" src={logo} alt="asd"/>
-
+        <div className="carticonmobilever" onClick={() => PrikaziKorpu() }><span>{cart.items}</span></div>
         </div>
         <div className="mainpagedisplay">
+
+  {/*-----------------------------------------FULLSCREEN DISPLAY -------------------------------------- */}
+
+
           <div className="menudisplay">
             <div className="mainpicture">
 
@@ -241,7 +256,119 @@ if(searchfield.order == false)
 
           </div>
 
-          { /*------------------------------------- CART DISPLAY -------------------------------- */}
+
+ {/*---------------------------------------MOBILE DISPLAY ---------------------------------------------*/}
+
+
+        {!openshoppingcart.hidden
+      ?
+          <div className="mobilemenudisplay">
+            <div className="mobilemainpicture">
+
+                <h3>Find Healthy And <br/> Favourite Foods <br/>Near you</h3>
+
+            </div>
+            <div className="mobiletitleandsearchbar">
+                <h3>Choose what to eat today!</h3>
+                <input type="text" onChange={(e) => handleChangeInput(e)} placeholder="Search"></input>
+
+            </div>
+
+            <div className="mobilefoodiconsmenu">
+              <FoodIcon index={1} ikon={allfoodsicon} description="All"  handleClick={() => handleClickAllProducts()}/>
+              <FoodIcon index={2} ikon={pizzaicon} description="Pizza" category="PIZZA" handleClick={(value) => handleClick(value)} />
+              <FoodIcon index={3} ikon={fishicon} description="Fish" category="FISH" handleClick={(value) => handleClick(value)} />
+              <FoodIcon index={4} ikon={veganicon} description="Vegan" category="VEGAN" handleClick={(value) => handleClick(value)} />
+              <FoodIcon index={5} ikon={deserticon} description="Desert" category="DESERT" handleClick={(value) => handleClick(value)} />
+              <FoodIcon index={6} ikon={burgericon} description="Burger" category="BURGER" handleClick={(value) => handleClick(value)} />
+              <FoodIcon index={7} ikon={drinksicon} description="Drinks" category="DRINKS" handleClick={(value) => handleClick(value)} />
+            </div>
+
+            <div className="mobilemenuitems">
+            {
+              menu.mainmenu.filter(item => item.name.toLowerCase().includes(searchfield.input.toLowerCase())).map((item,index) =>{
+               return <MenuItem key={item.id} id={item.id} name={item.name} imageUrl={item.imageUrl} price={item.price} handleClick={() => Order(item,index)} />
+              })
+
+            }
+            </div>
+
+          </div>
+          :
+          null
+      }
+
+
+
+
+
+
+
+
+          { /*------------------------------------- MOBILE CART DISPLAY -------------------------------- */}
+          
+
+          {
+          openshoppingcart.hidden
+          ?
+          <div className="mobilecartdisplay">
+            <div className="mobileordertitleandicon">
+                <h3>Your Order</h3>
+                <div className="mobilecartimage" onClick={() => PrikaziKorpu()}><span>{cart.items}</span></div>
+            </div>
+            <div className="mobileremoveallitems" onClick={() => removeAllProducts()}>
+              <div>
+                  <span>CLEAR ALL</span>
+              </div>
+              <div className="mobileapproxtime">
+                <span>Your Order...</span>
+                <div><img src={approxtime} alt="mobiletimeikonica" />30 min</div>
+              </div>
+
+            </div>
+
+            <div className="mobilecartitems">
+              <div className="mobilecartitemsheader">
+                
+              </div>
+            {
+              cart.cartItems.map((item,index) =>(
+                <CartItem 
+                key={item[0].id} 
+                id={item[0].id} 
+                name={item[0].name} 
+                imageUrl={item[0].imageUrl} 
+                price={item[0].price} 
+                quantity={item[0].quantity} 
+                removeitem={() => RemoveItem(index)}
+                increment={() => Increment(index)}
+                decrement={() => Decrement(index)} />
+              ))
+            }
+            </div>
+
+            <div className="mobileTotalpriceandfinishorder">
+              <h3>TOTAL:</h3>
+              <h3>{cart.total}$</h3>
+              <Button handleClick={() => goToOrderPage()} clear>Finish</Button>
+            </div>
+
+            {
+              searchfield.message ?
+              <h3 className="mobileproceedmessage">/*{searchfield.message}*/</h3>
+              :
+              null
+
+            }
+            <p className="mobiledeliverypricemessage">For 7x products and more: DELIVERY FREE</p>
+
+
+          </div>
+          :
+          null
+              }
+
+        {/*------------------------FULLSCREEN CART--------------------------------------------- */}
 
           <div className="cartdisplay">
             <div className="ordertitleandicon">
@@ -299,6 +426,8 @@ if(searchfield.order == false)
         </div>
 
     </div>
+
+          
   );
             }
   else 
