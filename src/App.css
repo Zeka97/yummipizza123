@@ -119,10 +119,10 @@
     width: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .cartimage span{
-    color:black;
+    color:rgba(214, 117, 25, 0.993);
     font-weight: bold;
   }
 
@@ -223,7 +223,9 @@
     width: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    color:rgb(245, 122, 21);
+    font-weight: bold;
     }
     .carticonmobilever:hover{
       cursor: pointer;
