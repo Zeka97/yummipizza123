@@ -408,7 +408,7 @@ if(searchfield.order == false)
             <div className="Totalpriceandfinishorder">
               <h3>TOTAL:</h3>
               <h3>{cart.total}$</h3>
-              <Button handleClick={() => goToOrderPage()} clear>Finish</Button>
+              <Button handleClick={() => goToOrderPage()} clear>Proceed</Button>
             </div>
 
             {
