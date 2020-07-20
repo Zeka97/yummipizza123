@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/yummipizza123/precache-manifest.9c34b1364d050635151917e5aeb2245e.js"
+  "/yummipizza123/precache-manifest.c8571ffd77574f784e120e08144ec1d1.js"
 );
 
 self.addEventListener('message', (event) => {
