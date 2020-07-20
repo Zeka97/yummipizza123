@@ -7,7 +7,7 @@ import Button from '../../components/Button/button.component';
 import logo from '../../icons/logofirm.png'
 
 
-const OrderPage = ({cart, backtopage, total,totalitemsincart, setSearchfield, setCart}) => {
+const OrderPage = ({cart, backtopage, total,totalitemsincart, setSearchfield, setCart, setOpenshoppingcart}) => {
 
 
 
@@ -21,6 +21,9 @@ const OrderPage = ({cart, backtopage, total,totalitemsincart, setSearchfield, se
             cartItems:[],
             total:0,
             items:0
+        })
+        setOpenshoppingcart({
+            hidden:false
         })
     }
 

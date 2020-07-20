@@ -436,7 +436,8 @@ if(searchfield.order == false)
     total={cart.total} 
     totalitemsincart={cart.items} 
     setSearchfield={setSearchfield}
-    setCart={setCart} />
+    setCart={setCart}
+    setOpenshoppingcart={setOpenshoppingcart}/>
     )
 }
 
