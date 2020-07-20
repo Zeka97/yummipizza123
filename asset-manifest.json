@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yummipizza123/static/css/main.ec7c679d.chunk.css",
+    "main.css": "/yummipizza123/static/css/main.6b43b5c0.chunk.css",
     "main.js": "/yummipizza123/static/js/main.41ca8554.chunk.js",
     "main.js.map": "/yummipizza123/static/js/main.41ca8554.chunk.js.map",
     "runtime-main.js": "/yummipizza123/static/js/runtime-main.6968f67b.js",
@@ -8,9 +8,9 @@
     "static/js/2.8819838a.chunk.js": "/yummipizza123/static/js/2.8819838a.chunk.js",
     "static/js/2.8819838a.chunk.js.map": "/yummipizza123/static/js/2.8819838a.chunk.js.map",
     "index.html": "/yummipizza123/index.html",
-    "precache-manifest.252b1e0f275680470caf0d6b80a01e35.js": "/yummipizza123/precache-manifest.252b1e0f275680470caf0d6b80a01e35.js",
+    "precache-manifest.5cf58650c254373ae2affb9194eb41d2.js": "/yummipizza123/precache-manifest.5cf58650c254373ae2affb9194eb41d2.js",
     "service-worker.js": "/yummipizza123/service-worker.js",
-    "static/css/main.ec7c679d.chunk.css.map": "/yummipizza123/static/css/main.ec7c679d.chunk.css.map",
+    "static/css/main.6b43b5c0.chunk.css.map": "/yummipizza123/static/css/main.6b43b5c0.chunk.css.map",
     "static/js/2.8819838a.chunk.js.LICENSE.txt": "/yummipizza123/static/js/2.8819838a.chunk.js.LICENSE.txt",
     "static/media/orderpage.styles.css": "/yummipizza123/static/media/Supreme_pizza.f5a684b0.jpg",
     "static/media/App.css": "/yummipizza123/static/media/displaypicture.4f102d02.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.6968f67b.js",
     "static/js/2.8819838a.chunk.js",
-    "static/css/main.ec7c679d.chunk.css",
+    "static/css/main.6b43b5c0.chunk.css",
     "static/js/main.41ca8554.chunk.js"
   ]
 }

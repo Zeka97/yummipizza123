@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d1fd94a288f3b2ed8ca72a9154f772e",
+    "revision": "c877683286ac38bb0081e00c5135c952",
     "url": "/yummipizza123/index.html"
   },
   {
-    "revision": "460002365447bdef72e5",
-    "url": "/yummipizza123/static/css/main.ec7c679d.chunk.css"
+    "revision": "81350561e83f1d668ff7",
+    "url": "/yummipizza123/static/css/main.6b43b5c0.chunk.css"
   },
   {
     "revision": "fdc0c8ec7746cc07f9a7",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yummipizza123/static/js/2.8819838a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "460002365447bdef72e5",
+    "revision": "81350561e83f1d668ff7",
     "url": "/yummipizza123/static/js/main.41ca8554.chunk.js"
   },
   {
