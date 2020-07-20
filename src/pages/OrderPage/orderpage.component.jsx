@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './orderpage.styles.css';
 import InputForma from '../../components/InputForma/InputForma.component';
 import PaymentItem from '../../components/paymentitems/paymentitems.compontent';

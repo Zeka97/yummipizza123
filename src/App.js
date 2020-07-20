@@ -1,6 +1,5 @@
 import React,{ useState } from 'react';
 import logo from './icons/logofirm.png';
-import carticon from './icons/carticon.png';
 import allfoodsicon from './icons/allfoodsicon.png';
 import pizzaicon from './icons/pizzaicon.png';
 import fishicon from './icons/fishicon.png';
