@@ -52,24 +52,24 @@ align-self: center;
 @media only screen and (max-width: 930px) {
     .cartitem{
     display: grid;
-    grid-template-columns: 1fr 2fr 0.1fr 0.1fr 0.1fr 1fr 1fr;
+    grid-template-columns: 0.3fr 0.4fr 0.1fr 0.1fr 0.1fr 0.3fr 0.3fr;
     margin-bottom: 1vh;
     }
     .cartitem img{
-        height: 30px;
-        width: 60px;
+        height: 20px;
+        width: 40px;
         justify-self: center;
         align-self: center;
     }
     .cartitemname{
-        margin-left: 10px;
-        margin-right: 16px;
-        font-size: 13px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 10px;
         justify-self: center;
         align-self: center;
     }
     .cartitem .price{
-        margin-left: 65px;
+        margin: 0;
         justify-self: center;
         align-self: center;
     }
@@ -77,10 +77,9 @@ align-self: center;
         margin-right: 5px;
         margin-left: 5px;
         justify-self: center;
-    align-self: center;
+        align-self: center;
     }
     .cartitem .remove{
-        margin-left: 50px;
         justify-self: center;
     align-self: center;
     }
@@ -88,7 +87,7 @@ align-self: center;
         cursor: pointer;
     }
     .cartitem span{
-        font-weight: bold;
+        font-weight: 500;
         justify-self: center;
         align-self: center;
     }
