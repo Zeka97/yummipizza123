@@ -37,7 +37,7 @@
     align-items: center;
     background-position: center;
     background-size: cover;
-    height: 25vh;
+    height: 15vh;
   }
   .mainpagedisplay .menudisplay .mainpicture h3{
     color: white;
@@ -73,7 +73,7 @@
   }
   .menuitems{
     margin-top:3%;
-    height: 52vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: auto auto;
     overflow-y: scroll;
@@ -162,7 +162,7 @@
 
 
   .cartitems{
-    height: 45vh;
+    height: 60vh;
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
